@@ -1,0 +1,21 @@
++++
+title = 'Heal'
+tags = ['medium','linux']
+date = 2024-12-26T21:37:15Z
+draft = true
++++
+![lesgo](/Heal/lesgo.png)
+
+# User
+
+![nmap](/Heal/nmap.png)
+
+![etc](/Heal/etc.png)
+
+
+![ffufapi](/Heal/ffufapi.png)
+```
+ ffuf -u http://heal.htb -H "Host:FUZZ.heal.htb" -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -c -fc 301
+```
+
+

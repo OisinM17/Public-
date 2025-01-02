@@ -6,8 +6,18 @@
     <description>Recent content in Topics on Prickly Phish writeups</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 </copyright>
-    <lastBuildDate>Sun, 29 Sep 2024 13:49:05 +0000</lastBuildDate><atom:link href="https://example.org/topics/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sun, 29 Dec 2024 19:59:25 +0000</lastBuildDate><atom:link href="https://example.org/topics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sans</title>
+      <link>https://example.org/topics/sans/</link>
+      <pubDate>Sun, 29 Dec 2024 19:59:25 +0000</pubDate>
+      
+      <guid>https://example.org/topics/sans/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://example.org/topics/linux/</link>

@@ -6,8 +6,49 @@
     <description>Recent content on Prickly Phish writeups</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2024 </copyright>
-    <lastBuildDate>Thu, 28 Nov 2024 18:03:17 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sun, 29 Dec 2024 19:59:25 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ActII</title>
+      <link>https://example.org/posts/sans/actii/</link>
+      <pubDate>Sun, 29 Dec 2024 19:59:25 +0000</pubDate>
+      
+      <guid>https://example.org/posts/sans/actii/</guid>
+      <description>Mobile analysis # Firstly we need to download both versions
+If you don&amp;rsquo;t have jadx install it and open it with &amp;ldquo;jadx-gui&amp;rdquo; Hit open file and then select SantaSwipe.apk
+In &amp;ldquo;Source Code com northpole.santaswipe MainActivity database&amp;rdquo; we see
+SELECT Item FROM NormalList WHERE Item NOT LIKE &amp;#39;%Ellie%&amp;#39; So im guessing Ellie is the answer Yep that gets us the silver
+Drone path # We find a login page and an &amp;ldquo;available files&amp;rdquo; page which we download a .</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/actii/featured.png" />
+    </item>
+    
+    <item>
+      <title>ActI</title>
+      <link>https://example.org/posts/sans/acti/</link>
+      <pubDate>Sun, 29 Dec 2024 00:14:57 +0000</pubDate>
+      
+      <guid>https://example.org/posts/sans/acti/</guid>
+      <description>cURLing # To get silver the commands are fairly simple
+curl curlingfun:8080 curl -k https://curlingfun:9090 curl -k https://curlingfun:9090 -d &amp;#39;skip=alabaster&amp;#39; curl -k https://curlingfun:9090 -H &amp;#39;Cookie: end=3&amp;#39; curl -k https://curlingfun:9090 -I curl -k https://curlingfun:9090 -H &amp;#39;Stone: Granite&amp;#39; curl -k https://curlingfun:9090/../../etc/hacks --path-as-is And i got the silver medal
+But how do we get the gold
+curl -k -X POST https://curlingfun:9090 -d &amp;#39;skip=bow&amp;#39; -H &amp;#39;Cookie: end=10&amp;#39; -H &amp;#39;Hack: 12ft&amp;#39; curl -k https://curlingfun:9090/../../etc/button --path-as-is curl -k -L https://curlingfun:9090/GoodSportsmanship Frosty Keypad # this is the terminal</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/acti/featured.png" />
+    </item>
+    
+    <item>
+      <title>Prologue</title>
+      <link>https://example.org/posts/sans/prologue/</link>
+      <pubDate>Sat, 28 Dec 2024 23:36:05 +0000</pubDate>
+      
+      <guid>https://example.org/posts/sans/prologue/</guid>
+      <description>Prologue # In this write up we will be going through and solving Holiday hack 2024
+The first challenge is
+Elf connect # For Elf Connect &amp;ldquo;randomElf&amp;rdquo; suspiciously has a high score of 50,000 points which ismt possible as 1600 is the highest
+Firstly we will be opening most of these challenges in their own tab so that theyre esaier to work with
+The way to do this is right click and insepect and then find the challenge and open in a new tab</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/prologue/featured.png" />
+    </item>
+    
     <item>
       <title>Blurry</title>
       <link>https://example.org/posts/htb/blurry/</link>
@@ -44,6 +85,23 @@ made a test page with a rev and ran it
 got foothold now onto priv esc
 db name = dolibarr db username = dolibarrowner db password = serverfun2$2023!</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/boardlight/featured.png" />
+    </item>
+    
+    <item>
+      <title>Permx</title>
+      <link>https://example.org/posts/htb/permx/</link>
+      <pubDate>Thu, 19 Sep 2024 20:31:54 +0000</pubDate>
+      
+      <guid>https://example.org/posts/htb/permx/</guid>
+      <description>User # ffuf -u http://permx.htb -H &amp;#34;Host:FUZZ.permx.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -fw 18 www. lms.
+linpeas all users
+MTZ
+/app/config/configuration.php $_configuration[&amp;lsquo;main_database&amp;rsquo;] = &amp;lsquo;chamilo&amp;rsquo;; $_configuration[&amp;lsquo;db_user&amp;rsquo;] = &amp;lsquo;chamilo&amp;rsquo;; $_configuration[&amp;lsquo;db_password&amp;rsquo;] = &amp;lsquo;03F6lY3uXAP2bkW8&amp;rsquo;;
+password was the same as the database
+ALWAYS TRY REUSE PASSWORDS
+Root # ran linpeass acl script let write permission
+This script did was use setfacl to change the permisions on a file but the problem was it had to be in /home/mtz/*</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/permx/featured.png" />
     </item>
     
   </channel>
