@@ -2,81 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Prickly Phish writeups</title>
-    <link>https://example.org/posts/</link>
+    <link>https://prickly-phish.netlify.app/posts/</link>
     <description>Recent content in Posts on Prickly Phish writeups</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Sun, 29 Dec 2024 19:59:25 +0000</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Dec 2024 19:59:25 +0000</lastBuildDate><atom:link href="https://prickly-phish.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ActII</title>
-      <link>https://example.org/posts/sans/actii/</link>
+      <link>https://prickly-phish.netlify.app/posts/sans/actii/</link>
       <pubDate>Sun, 29 Dec 2024 19:59:25 +0000</pubDate>
       
-      <guid>https://example.org/posts/sans/actii/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/sans/actii/</guid>
       <description>Mobile analysis # Firstly we need to download both versions
 If you don&amp;rsquo;t have jadx install it and open it with &amp;ldquo;jadx-gui&amp;rdquo; Hit open file and then select SantaSwipe.apk
 In &amp;ldquo;Source Code com northpole.santaswipe MainActivity database&amp;rdquo; we see
 SELECT Item FROM NormalList WHERE Item NOT LIKE &amp;#39;%Ellie%&amp;#39; So im guessing Ellie is the answer Yep that gets us the silver
 Drone path # We find a login page and an &amp;ldquo;available files&amp;rdquo; page which we download a .</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/actii/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/sans/actii/featured.png" />
     </item>
     
     <item>
       <title>ActI</title>
-      <link>https://example.org/posts/sans/acti/</link>
+      <link>https://prickly-phish.netlify.app/posts/sans/acti/</link>
       <pubDate>Sun, 29 Dec 2024 00:14:57 +0000</pubDate>
       
-      <guid>https://example.org/posts/sans/acti/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/sans/acti/</guid>
       <description>cURLing # To get silver the commands are fairly simple
 curl curlingfun:8080 curl -k https://curlingfun:9090 curl -k https://curlingfun:9090 -d &amp;#39;skip=alabaster&amp;#39; curl -k https://curlingfun:9090 -H &amp;#39;Cookie: end=3&amp;#39; curl -k https://curlingfun:9090 -I curl -k https://curlingfun:9090 -H &amp;#39;Stone: Granite&amp;#39; curl -k https://curlingfun:9090/../../etc/hacks --path-as-is And i got the silver medal
 But how do we get the gold
 curl -k -X POST https://curlingfun:9090 -d &amp;#39;skip=bow&amp;#39; -H &amp;#39;Cookie: end=10&amp;#39; -H &amp;#39;Hack: 12ft&amp;#39; curl -k https://curlingfun:9090/../../etc/button --path-as-is curl -k -L https://curlingfun:9090/GoodSportsmanship Frosty Keypad # this is the terminal</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/acti/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/sans/acti/featured.png" />
     </item>
     
     <item>
       <title>Prologue</title>
-      <link>https://example.org/posts/sans/prologue/</link>
+      <link>https://prickly-phish.netlify.app/posts/sans/prologue/</link>
       <pubDate>Sat, 28 Dec 2024 23:36:05 +0000</pubDate>
       
-      <guid>https://example.org/posts/sans/prologue/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/sans/prologue/</guid>
       <description>Prologue # In this write up we will be going through and solving Holiday hack 2024
 The first challenge is
 Elf connect # For Elf Connect &amp;ldquo;randomElf&amp;rdquo; suspiciously has a high score of 50,000 points which ismt possible as 1600 is the highest
 Firstly we will be opening most of these challenges in their own tab so that theyre esaier to work with
 The way to do this is right click and insepect and then find the challenge and open in a new tab</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/sans/prologue/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/sans/prologue/featured.png" />
+    </item>
+    
+    <item>
+      <title>MonitorsThree</title>
+      <link>https://prickly-phish.netlify.app/posts/htb/monitorsthree/</link>
+      <pubDate>Tue, 26 Nov 2024 19:01:10 +0000</pubDate>
+      
+      <guid>https://prickly-phish.netlify.app/posts/htb/monitorsthree/</guid>
+      <description>monitorsthree # User # sudo bash -c &amp;#34;echo &amp;#39;10.10.11.30 monitorsthree.htb&amp;#39;&amp;gt;&amp;gt; /etc/hosts&amp;#34; Can&amp;rsquo;t see anything of interest off the bat lets do some enumeration
+ffuf -u http://monitorsthree.htb -H &amp;#34;Host:FUZZ.monitorsthree.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -c -ac Found the app login section
+The password recovery section was vulnerable to sql injection
+sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --dbs sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --level=5 --risk=3 -D monitorsthree_db --tables sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --level=5 --risk=3 -D monitorsthree_db -T users -columns sqlmap -u monitorsthree.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/monitorsthree/featured.png" />
     </item>
     
     <item>
       <title>Blurry</title>
-      <link>https://example.org/posts/htb/blurry/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/blurry/</link>
       <pubDate>Sun, 29 Sep 2024 13:49:05 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/blurry/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/blurry/</guid>
       <description>Lorem ipsum</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/blurry/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/blurry/featured.png" />
     </item>
     
     <item>
       <title>Editorial</title>
-      <link>https://example.org/posts/htb/editorial/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/editorial/</link>
       <pubDate>Thu, 26 Sep 2024 19:10:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/editorial/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/editorial/</guid>
       <description>User # sudo bash -c &amp;#34;echo &amp;#39;10.10.11.20 editorial.htb&amp;#39; &amp;gt;&amp;gt; /etc/hosts &amp;#34; Here i&amp;rsquo;m testing for ssrf
 I&amp;rsquo;m getting all numbers from 1 - 65536 in a wordlist for the local ports I saved the reqeust i got from burp into a .txt file to use with ffuf
 I started running ffuf but I was getting a whole load of 200s so I added &amp;ldquo;-fs 61&amp;rdquo; which filters out any which the size is 61</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/editorial/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/editorial/featured.png" />
     </item>
     
     <item>
       <title>Boardlight</title>
-      <link>https://example.org/posts/htb/boardlight/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/boardlight/</link>
       <pubDate>Sat, 21 Sep 2024 14:15:04 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/boardlight/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/boardlight/</guid>
       <description>Boardlight # User # FFuF was doing this
 so i added -c -fs 15949
 ffuf -u http://board.htb -H &amp;#34;Host:FUZZ.board.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -c -fs 15949 found a poc for authenticated rev shell so had to get in
@@ -84,15 +97,15 @@ Googled default creds which were admin/admin and it worked
 made a test page with a rev and ran it
 got foothold now onto priv esc
 db name = dolibarr db username = dolibarrowner db password = serverfun2$2023!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/boardlight/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/boardlight/featured.png" />
     </item>
     
     <item>
       <title>Permx</title>
-      <link>https://example.org/posts/htb/permx/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/permx/</link>
       <pubDate>Thu, 19 Sep 2024 20:31:54 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/permx/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/permx/</guid>
       <description>User # ffuf -u http://permx.htb -H &amp;#34;Host:FUZZ.permx.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -fw 18 www. lms.
 linpeas all users
 MTZ
@@ -101,7 +114,7 @@ password was the same as the database
 ALWAYS TRY REUSE PASSWORDS
 Root # ran linpeass acl script let write permission
 This script did was use setfacl to change the permisions on a file but the problem was it had to be in /home/mtz/*</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/permx/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/permx/featured.png" />
     </item>
     
   </channel>

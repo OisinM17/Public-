@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Easy on Prickly Phish writeups</title>
-    <link>https://example.org/topics/easy/</link>
+    <link>https://prickly-phish.netlify.app/topics/easy/</link>
     <description>Recent content in Easy on Prickly Phish writeups</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Thu, 26 Sep 2024 19:10:00 +0000</lastBuildDate><atom:link href="https://example.org/topics/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 19:10:00 +0000</lastBuildDate><atom:link href="https://prickly-phish.netlify.app/topics/easy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Editorial</title>
-      <link>https://example.org/posts/htb/editorial/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/editorial/</link>
       <pubDate>Thu, 26 Sep 2024 19:10:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/editorial/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/editorial/</guid>
       <description>User # sudo bash -c &amp;#34;echo &amp;#39;10.10.11.20 editorial.htb&amp;#39; &amp;gt;&amp;gt; /etc/hosts &amp;#34; Here i&amp;rsquo;m testing for ssrf
 I&amp;rsquo;m getting all numbers from 1 - 65536 in a wordlist for the local ports I saved the reqeust i got from burp into a .txt file to use with ffuf
 I started running ffuf but I was getting a whole load of 200s so I added &amp;ldquo;-fs 61&amp;rdquo; which filters out any which the size is 61</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/editorial/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/editorial/featured.png" />
     </item>
     
     <item>
       <title>Boardlight</title>
-      <link>https://example.org/posts/htb/boardlight/</link>
+      <link>https://prickly-phish.netlify.app/posts/htb/boardlight/</link>
       <pubDate>Sat, 21 Sep 2024 14:15:04 +0000</pubDate>
       
-      <guid>https://example.org/posts/htb/boardlight/</guid>
+      <guid>https://prickly-phish.netlify.app/posts/htb/boardlight/</guid>
       <description>Boardlight # User # FFuF was doing this
 so i added -c -fs 15949
 ffuf -u http://board.htb -H &amp;#34;Host:FUZZ.board.htb&amp;#34; -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -c -fs 15949 found a poc for authenticated rev shell so had to get in
@@ -33,7 +33,7 @@ Googled default creds which were admin/admin and it worked
 made a test page with a rev and ran it
 got foothold now onto priv esc
 db name = dolibarr db username = dolibarrowner db password = serverfun2$2023!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/htb/boardlight/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/boardlight/featured.png" />
     </item>
     
   </channel>
