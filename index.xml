@@ -63,6 +63,16 @@ sqlmap -u monitorsthree.htb/forgot_password.php --forms --crawl=2 --dbs sqlmap -
     </item>
     
     <item>
+      <title>cicada</title>
+      <link>https://prickly-phish.netlify.app/posts/htb/cicada/</link>
+      <pubDate>Thu, 10 Oct 2024 23:49:05 +0000</pubDate>
+      
+      <guid>https://prickly-phish.netlify.app/posts/htb/cicada/</guid>
+      <description>Windows active directory box</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://prickly-phish.netlify.app/posts/htb/cicada/featured.png" />
+    </item>
+    
+    <item>
       <title>Blurry</title>
       <link>https://prickly-phish.netlify.app/posts/htb/blurry/</link>
       <pubDate>Sun, 29 Sep 2024 13:49:05 +0000</pubDate>
